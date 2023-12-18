@@ -10,7 +10,7 @@ app = Flask(__name__)
 def home():
     return "Hello Candidate"
 
-@app.route('/predict')
+@app.route('/predict', methods=['POST'])
 def predict():
     try:
         # Get input values from the POST request
